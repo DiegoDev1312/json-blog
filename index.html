@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Novo post</legend>
+                <label>
+                    Nome do post
+                    <input data-type="title" type="text" placeholder="Nome" />
+                </label>
+                <label>
+                    Descrição do post
+                    <textarea data-type="body" type="text" placeholder="Descrição"></textarea>
+                </label>
+                <button>Criar</button>
+            </fieldset>
+        </form>
+        <div class="blog-area">
+            <h2>Carregando...</h2>
+        </div>
+        <div data-loading class="loading-area"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
